@@ -1,0 +1,23 @@
+<html>
+<!--Criar um JS simples para mostrar o nome, R.A  a idade de 
+    um aluno
+    -->
+<h1>Cadastro de alunos</h1>
+<label>Nome:</label>
+<input type="text" id="nome"><br><br>
+<label>R.A.:</label>
+<input type="text" id="RA"><br><br>
+<label>Idade:</label>
+<input type="number" id="idade"><br><br>
+<button onclick="mostrar_aluno()">Resultado</button>
+<script>
+    function mostrar_aluno() {
+        var nome = document.getElementById('nome').value;
+        var ra = document.getElementById('RA').value;
+        var idade = document.getElementById('idade').value;
+        var status = (idade >= 18) ? 'maior de idade' : 'menor de idade';
+        alert('Nome: ' + nome + '\nR.A: ' + ra + '\nIdade: ' + idade + '\nStatus:  ' + status);
+    }
+</script>
+
+</html>
